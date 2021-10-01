@@ -50,9 +50,12 @@ def testeUsuarioExistente(nome = str, email = str):
     if(len(listaUsuario) != 0):
         i = 0
         while i < len(listaUsuario):
-            if((listaUsuario[i]['nome'].upper() == nome.upper()) and (listaUsuario[i]['email'].upper() == email.upper())):
-                print("\n-------------Usuário já existe, digite um nome e e-mail diferente-------------")
-                testNovo = False                
+            if(listaUsuario[i]['nome'].upper() == nome.upper()):
+                print("\n-------------Usuário já existe, digite um nome diferente-------------")
+                testNovo = False 
+            if (listaUsuario[i]['email'].upper() == email.upper()):
+                print("\n-------------Usuário já existe, digite um email diferente-------------")
+                testNovo = False         
             i = i+1
     return testNovo
 # fim teste usuário  
