@@ -1,5 +1,4 @@
 listaUsuario = []   #lista cadastro usuário
-novoUsuario = {}    #dicionario cadastro usuário
 testCad = 1         #variavel teste para novo usuário
 
 # inicio menu
@@ -20,13 +19,14 @@ def menu():
     elif (num == '6'):
         pass
     else:
-        print("Numero digitado não corresponde as opções do menu, digite um numero valido!")
+        print("\n-------------Numero digitado não corresponde as opções do menu, digite um numero valido!-------------")
         menu()
 # fim  menu
 
 # inicio cadastro usuário
 def criarUsuario():
     print("\n-------------Novo Usuário-------------")
+    novoUsuario = {}
     nomeCriarUsuario = input("\nDigite o nome completo do usuário: ")
     emailCriarUsuario = input("Digite o e-mail do usuário: ")
     if(nomeCriarUsuario == "" or emailCriarUsuario == ""):
