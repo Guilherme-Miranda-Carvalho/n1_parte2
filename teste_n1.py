@@ -39,7 +39,6 @@ def verificarSeExisteAluno(listaUsuarioCadastrado):
     verificarSeExisteAluno(listaUsuarioCadastrado)
     exibirNomesAlunosOrdemAlfabetica(listaUsuarioCadastrado)
    
-    
 
 
 if __name__ == "__main__":
